@@ -7,7 +7,7 @@ from models import *
 def main(argv):
     jan = Player(1000)
 
-    working_day = WorkingDay(24 * 60 ** 2)
+    working_day = Runtime(24 * 60 ** 2)
 
     while Market.counter < 10:
         time.sleep(1)

@@ -4,14 +4,15 @@ import pandas as pd
 from api_handler import API
 
 
-class WorkingDay:
+class Runtime:
+    start_time = time.time()
+    end_time = start_time
+
     def __init__(self, duration=24 * 60 ** 2):
-        self.start_time = time.time()
         self.duration = duration
-        self.end_time = self.start_time
 
     def get_time_progress(self):
-        return (time.time() - self.start_time) / self.duration * 100
+        return (time.time() - Runtime.start_time) / self.duration * 100
 
 
 class Market:
