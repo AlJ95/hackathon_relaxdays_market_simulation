@@ -97,12 +97,12 @@ class Player:
     def update(self):
         self.me, self.money, self.stocks = API.get_self()[-1].values()
         if self.start_money:
-            if self.money > self.start_money * 200:
-                Market.lower, Market.higher = 0.35, 0.75
-            elif self.money > self.start_money * 100:
-                Market.lower, Market.higher = 0.275, 0.675
+            if self.money > self.start_money * 25:
+                Market.lower, Market.higher = 0.35, 0.85
             elif self.money > self.start_money * 10:
-                Market.lower, Market.higher = 0.2, 0.6
+                Market.lower, Market.higher = 0.275, 0.75
+            elif self.money > self.start_money * 5:
+                Market.lower, Market.higher = 0.2, 0.65
 
     def get_money(self):
         self.update()
