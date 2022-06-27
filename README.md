@@ -16,7 +16,7 @@ Player do not buy from other players,
 but all players can buy from all suppliers 
 and all suppliers buy from all players.
 
-#ä Solution
+## Solution
 
 Time was were short. The basic solution was to accept the randomness of the market. 
 
