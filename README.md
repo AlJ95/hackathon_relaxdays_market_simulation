@@ -4,7 +4,7 @@
 
 ## Problem Description
 
-This is our solution for the market-simulation competition from the third Relaxdays Hackathon.
+Winning solution for the market-simulation competition from the third Relaxdays Hackathon.
 
 There is a market simulation for buying and listing stocks. 
 
